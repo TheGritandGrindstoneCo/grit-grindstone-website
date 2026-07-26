@@ -74,8 +74,9 @@
   <div class="container" style="text-align:center;">
     <h2><span class="placeholder">Be the First to Know When We Launch</span></h2>
     <p style="color:var(--gray-text);max-width:500px;margin:0 auto 24px;"><span class="placeholder">Short incentive line — early access, launch discount, etc.</span></p>
-    <form style="margin:0 auto;" onsubmit="return false;">
-      <input type="email" placeholder="Your email address" required>
+    <form name="launch-notify" method="POST" data-netlify="true" action="/thank-you.html" style="margin:0 auto;">
+      <input type="hidden" name="form-name" value="launch-notify">
+      <input type="email" name="email" placeholder="Your email address" required>
       <button type="submit" class="btn">Notify Me</button>
     </form>
   </div>
